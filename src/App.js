@@ -20,7 +20,7 @@ function App() {
     <div className="h-[100vh] w-full">
       <div className="flex h-full">
         {mousePos.x <= 75 ? (
-          <div className="w-[5%] menu-bar">
+          <div className="flex w-[5%] menu-bar">
             <MenuBar
               filterLetter={filterLetter}
               setFilterLetter={setFilterLetter}
@@ -28,9 +28,8 @@ function App() {
             <div className="p-8 text-8xl text-[#ffa31a]">{filterLetter}</div>
           </div>
         ) : (
-          <></>
+          <div className="p-8 text-8xl text-[#ffa31a]">{filterLetter}</div>
         )}
-        <div className="p-8 text-8xl text-[#ffa31a]">{filterLetter}</div>
       </div>
     </div>
   );
